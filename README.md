@@ -1,4 +1,4 @@
-# Smart Mobile A - SM34
+# Smart Mobile - iOS Development
 
 Dit is het technische code gedeelte van mijn portfolio voor de specialisatie route Smart Mobile A. Dit en de rest van mijn portfolio kun je vinden op [mijn portfolio website](http://portfolio.maxaltena.com/SM34/).
 
