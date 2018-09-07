@@ -1,14 +1,14 @@
 //
-//  MainViewController.swift
+//  ViewController.swift
 //  Storyboards
 //
-//  Created by Max Altena on 02/09/2018.
+//  Created by Max Altena on 07/09/2018.
 //  Copyright © 2018 Max Altena. All rights reserved.
 //
 
 import UIKit
 
-class MainViewController: UIViewController {
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

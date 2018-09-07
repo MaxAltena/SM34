@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  Storyboards
+//  Ratings
 //
 //  Created by Max Altena on 07/09/2018.
 //  Copyright © 2018 Max Altena. All rights reserved.
