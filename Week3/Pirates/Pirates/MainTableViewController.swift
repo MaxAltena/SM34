@@ -15,7 +15,7 @@ var pirates = [Pirate]()
 var myIndex = 0
 
 class MainTableViewController: UITableViewController {
-    final let url = "http://static.maxaltena.com/web/data/pirates.json"
+    final let url = "https://static.maxaltena.com/web/data/pirates.json"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,17 +36,12 @@ class MainTableViewController: UITableViewController {
      
         cell.nameLabel.text = pirates[indexPath.row].name
         cell.lifeLabel.text = pirates[indexPath.row].life
-
-        if  let imageURL = URL(string: pirates[indexPath.row].img!) {
-            DispatchQueue.global().async {
-                let data = try? Data(contentsOf: imageURL)
-                if let data = data {
-                    let image = UIImage(data: data)
-                    DispatchQueue.main.async {
-                        cell.imageView!.image = image
-                    }
-                }
-            }
+        let imgURL = URL(string: pirates[indexPath.row].img!)
+        let data = try? Data(contentsOf: imgURL!)
+        
+        if let imageData = data {
+            let image = UIImage(data: imageData)
+            cell.imgView.image = image
         }
         return cell
     }
@@ -72,6 +67,6 @@ class MainTableViewController: UITableViewController {
             } catch let jsonError {
                 print("Error serializing json:", jsonError)
             }
-            }.resume()
+        }.resume()
     }
 }
